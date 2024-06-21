@@ -29,7 +29,92 @@ The trained model was deployed to an endpoint on Google Vertex AI, allowing it t
 ## Usage
 To use the deployed model, send a POST request with the input text to the endpoint. Example input and output:
 
-**Input:**
+**Input: {
+"instances": [
+{"content": "I'm unhappy with the service and want my money back."}
+]
+}**
+
+**Output: 
+To showcase your work on the dataset preparation, training, and deployment of the chatbot model using Google Vertex AI in your GitHub repository, you should include the following:
+
+Jupyter Notebook: Upload the Jupyter Notebook where you performed data cleaning and preparation. This notebook should include all the steps you took to clean the dataset and any exploratory data analysis (EDA) you performed. Name this file appropriately, e.g., Data_Cleaning_and_Preparation.ipynb.
+
+README File: Update the README file to provide an overview of the project, including:
+
+Introduction: A brief description of the project and its goals.
+Dataset: Information about the dataset used, including where it was sourced from and how it was cleaned (link to the Jupyter Notebook).
+Model Training: Explain how the model was trained using Google Vertex AI, including steps for creating the dataset, training the model, and evaluating it.
+Deployment: Describe the deployment process of the trained model to an endpoint on Google Vertex AI.
+Usage: Instructions on how to use the deployed model, including example input and output.
+Files: A list of files included in the repository with descriptions of their contents.
+Script for Vertex AI: If you have any Python scripts or commands that were used to interact with Google Vertex AI, include those in a separate folder, e.g., vertex_ai_scripts.
+
+Screenshots and Visuals: Add screenshots of the key steps in Vertex AI (e.g., dataset import, model training, evaluation metrics, and deployment). Place these images in a folder named images and link to them in the README file.
+
+Here is an example structure for your repository:
+
+arduino
+Copy code
+Chatbot-Intent-Recognition-using-Google-Vertex-AI/
+│
+├── data/
+│   └── ultracleaned_chatbot_dataset.csv
+│
+├── vertex_ai_scripts/
+│   └── vertex_ai_training.py (example script if applicable)
+│
+├── images/
+│   └── data_import.png
+│   └── model_training.png
+│   └── evaluation_metrics.png
+│   └── deployment.png
+│
+├── Data_Cleaning_and_Preparation.ipynb
+├── LICENSE
+├── README.md
+README.md Example Content
+markdown
+Copy code
+# Chatbot Intent Recognition using Google Vertex AI
+
+## Introduction
+This project demonstrates the complete workflow for building, training, and deploying a chatbot intent recognition model using Google Vertex AI.
+
+## Dataset
+The dataset used for this project contains customer utterances and their corresponding intents. The data was sourced from [Kaggle](https://www.kaggle.com/datasets/niraliivaghani/chatbot-dataset/data). The dataset was cleaned and prepared using a Jupyter Notebook, which can be found [here](data/Data_Cleaning_and_Preparation.ipynb).
+
+## Model Training
+The model was trained using Google Vertex AI's AutoML for text classification. Key steps include:
+1. Importing the cleaned dataset.
+2. Training the model using Vertex AI.
+3. Evaluating the model's performance.
+
+## Deployment
+The trained model was deployed to an endpoint on Google Vertex AI, allowing it to serve online predictions. [Screenshots](images/deployment.png) of the deployment process are provided.
+
+## Usage
+To use the deployed model, send a POST request with the input text to the endpoint. Example input and output:
+
+**Input:
+{
+"instances": [
+{"content": "I'm unhappy with the service and want my money back."}
+]
+}**
+
+makefile
+Copy code
+
+**Output:
+{
+"predictions": [
+{
+"displayName": "complaint",
+"confidence": 0.945
+}
+]
+}**
 
 ## Model Evaluation
 | Metric          | Value    |
