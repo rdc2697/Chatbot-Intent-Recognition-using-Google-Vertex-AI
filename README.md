@@ -30,7 +30,8 @@ The dataset used for training the model is sourced from Kaggle and contains vari
 
 ## Visuals
 ### Precision-Recall Curve
-![Precision-Recall Curve](path/to/Precision_Recall.png)
+![Precision-Recall Curve]<img width="477" alt="Precision_Recall" src="https://github.com/rdc2697/Chatbot-Intent-Recognition-using-Google-Vertex-AI/assets/40556517/95d46288-fdba-4617-b9ed-f04604ddd866">
+
 
 ### Confusion Matrix
 ![Confusion Matrix](path/to/Confusion_Matrix.png)
