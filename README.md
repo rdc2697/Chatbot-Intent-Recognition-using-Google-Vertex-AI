@@ -30,11 +30,14 @@ The dataset used for training the model is sourced from Kaggle and contains vari
 
 ## Visuals
 ### Precision-Recall Curve
-![Precision-Recall Curve]<img width="477" alt="Precision_Recall" src="https://github.com/rdc2697/Chatbot-Intent-Recognition-using-Google-Vertex-AI/assets/40556517/95d46288-fdba-4617-b9ed-f04604ddd866">
+<img width="477" alt="Precision_Recall" src="https://github.com/rdc2697/Chatbot-Intent-Recognition-using-Google-Vertex-AI/assets/40556517/95d46288-fdba-4617-b9ed-f04604ddd866">
 
 
-### Confusion Matrix
-![Confusion Matrix](path/to/Confusion_Matrix.png)
+### Confusion Matrix with Item Counts
+
+<img width="502" alt="confusion_matrix" src="https://github.com/rdc2697/Chatbot-Intent-Recognition-using-Google-Vertex-AI/assets/40556517/c0587042-f451-4a59-9d21-08bebea12962">
+<img width="479" alt="confusion_matrix_item_counts" src="https://github.com/rdc2697/Chatbot-Intent-Recognition-using-Google-Vertex-AI/assets/40556517/d02a09ad-362a-4e0b-b19c-6da54cdc1b4f">
+
 
 ## How to Use the Model
 1. **Make Predictions**: Use the deployed model endpoint to make predictions on new customer queries.
