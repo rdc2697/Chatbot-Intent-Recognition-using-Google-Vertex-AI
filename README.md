@@ -17,6 +17,20 @@ The dataset used for training the model is sourced from Kaggle and contains vari
 3. **Model Evaluation**: Evaluated the model using precision, recall, and F1 score.
 4. **Model Deployment**: Deployed the trained model on Google Vertex AI.
 
+## Model Training
+The model was trained using Google Vertex AI's AutoML for text classification. Key steps include:
+1. Importing the cleaned dataset.
+2. Training the model using Vertex AI.
+3. Evaluating the model's performance.
+
+## Deployment
+The trained model was deployed to an endpoint on Google Vertex AI, allowing it to serve online predictions.
+
+## Usage
+To use the deployed model, send a POST request with the input text to the endpoint. Example input and output:
+
+**Input:**
+
 ## Model Evaluation
 | Metric          | Value    |
 |-----------------|----------|
